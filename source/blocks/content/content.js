@@ -1,0 +1,5 @@
+blocks.content = {
+    init: function(){
+
+    }
+};

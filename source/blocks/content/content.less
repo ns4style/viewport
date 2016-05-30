@@ -1,0 +1,299 @@
+.content{
+  width:100%;
+  height:auto;
+  background-color: #fcfcfc;
+  position:relative;
+}
+
+.content:after{
+  content:"";
+  width:100%;
+  height:10px;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: lightgrey;
+  opacity:.3;
+  z-index: 1;
+}
+
+.content:before{
+  content:"";
+  width:100%;
+  height:10px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background-color: lightgrey;
+  opacity:.3;
+  z-index: 1;
+}
+
+  .content__wrapper{
+    width:930px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #FFFFFF;
+    position:relative;
+    border-left:solid lightgrey 2px;
+    border-right:solid lightgrey 2px;
+    z-index:2;
+    padding:30px 25px 0;
+    font-size:0;
+    line-height:0;
+  }
+
+    .content__main-left{
+      height:auto;
+      width:580px;
+      margin-right:50px;
+      display:inline-block;
+      vertical-align:top;
+    }
+
+      .content__news-list{
+        width:100%;
+        height:auto;
+      }
+
+        .content__news-item{
+          width:275px;
+          height:auto;
+          position:relative;
+          display: inline-block;
+          padding-bottom:40px;
+        }
+
+        .content__news-item:nth-child(odd){
+          margin-right:30px;
+        }
+
+        .content__news-item:after{
+          content:"";
+          position:absolute;
+          width:100%;
+          height:10px;
+          top:0;
+          left:0;
+          z-index:-1;
+          background-image: url("/assets/images/stripe.png");
+        }
+          .content__news-item-tag{
+            font-size: 12px;
+            color: rgb(68, 68, 68);
+            font-style: italic;
+            line-height: 9px;
+            text-align: left;
+            z-index:5;
+            display:inline-block;
+            padding-right:15px;
+            background-color: #ffffff;
+            margin-bottom:20px;
+            }
+
+          .content__news-item-image-wrapper{
+            width:275px;
+            height:auto;
+            margin:0 auto;
+            border: solid darkgrey 1px;
+            box-sizing: border-box;
+            margin-bottom:25px;
+          }
+
+            .content__news-item-image{
+              background-image: url("http://placehold.it/265x150");
+              width:265px;
+              height:150px;
+              margin: 4px 4px;
+              border: solid darkgrey 1px;
+              box-sizing: border-box;
+            }
+
+          .content__news-item-info{
+            width:100%;
+            box-sizing: border-box;
+            padding-left:2px;
+          }
+
+            .content__news-item-title {
+              font-size: 12px;
+              color: rgb(68, 68, 68);
+              font-style: italic;
+              line-height: 12px;
+              text-align: left;
+              text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+              display:block;
+              text-decoration: none;
+              margin-bottom:20px;
+            }
+
+            .content__news-item-title:hover{
+              color: rgb(228, 118, 0);
+            }
+
+            .content__news-item-span{
+              display:inline-block;
+              font-size: 11px;
+              color: rgb(170, 170, 170);
+              line-height: 11px;
+              font-style: italic;
+              text-align: left;
+              margin:0 3px 20px 0;
+              }
+
+            .content__news-item-span:hover{
+              color: #000000;
+            }
+
+            .content__news-item-text{
+              display:block;
+              font-size: 12px;
+              color: rgb(85, 85, 85);
+              line-height: 15px;
+              text-align: left;
+              padding: 0 20px 20px 0;
+              position:relative;
+              }
+
+            .content__news-item-text:after, .content__news-item-similar:after,.content__latest-list-item:after, .sidebar__twitter-item:after, .sidebar__posts-item:after,.footer__comments-item:after{
+              content:"";
+              height:1px;
+              width:100%;
+              position:absolute;
+              background-image: url("/assets/images/sidebar-sep.png");
+              left:0;
+              bottom:0;
+            }
+
+        .content__news-item-similar{
+          position: relative;
+        }
+
+          .content__similar-photo-wrapper{
+            width:50px;
+            height:auto;
+            border: solid darkgrey 1px;
+            box-sizing: border-box;
+            margin:20px 10px 20px 0;
+            display:inline-block;
+            vertical-align: top;
+          }
+
+            .content__similar-photo{
+              background-image: url("http://placehold.it/45x45");
+              width:45px;
+              height:45px;
+              margin: 2px 2px;
+              border: solid darkgrey 1px;
+              box-sizing: border-box;
+            }
+
+          .content__similar-text{
+            width:200px;
+            height:auto;
+            display:inline-block;
+            margin:16px 0 0;
+          }
+
+            .content__similar-title {
+              font-size: 12px;
+              color: rgb(68, 68, 68);
+              font-style: italic;
+              line-height: 16px;
+              text-align: left;
+              margin-bottom:12px;
+              display:block;
+            }
+
+      .content__latest-list{
+        width:100%;
+        height:auto;
+        position:relative;
+        padding-bottom:60px;
+      }
+
+      .content__latest-list:after{
+        content:"";
+        position:absolute;
+        width:100%;
+        height:10px;
+        top:0;
+        left:0;
+        z-index:-1;
+        background-image: url("/assets/images/stripe.png");
+      }
+
+        .content__latest-list-title{
+          font-size: 12px;
+          color: rgb(68, 68, 68);
+          font-style: italic;
+          line-height: 9px;
+          text-align: left;
+          z-index:5;
+          display:inline-block;
+          padding-right:15px;
+          background-color: #ffffff;
+        }
+
+        .content__latest-list-item{
+          width:100%;
+          height:auto;
+          margin-top:20px;
+          position: relative;
+        }
+
+          .content__latest-list-item-image-wrapper{
+            width:180px;
+            height:auto;
+            border: solid darkgrey 1px;
+            box-sizing: border-box;
+            margin:0 20px 20px 0;
+            display:inline-block;
+            vertical-align: top;
+          }
+
+            .content__latest-list-item-image{
+              background-image: url("http://placehold.it/170x90");
+              width:170px;
+              height:90px;
+              margin: 4px 4px;
+              border: solid darkgrey 1px;
+              box-sizing: border-box;
+            }
+
+          .content__latest-list-item-info{
+            width:380px;
+            height:auto;
+            padding-top:3px;
+            display:inline-block;
+            vertical-align: top;
+            margin-bottom:20px;
+          }
+
+            .content__latest-list-item-title {
+              width:350px;
+              font-size: 12px;
+              color: rgb(68, 68, 68);
+              font-style: italic;
+              line-height: 12px;
+              text-align: left;
+              text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+              display:block;
+              text-decoration: none;
+              margin-bottom:20px;
+            }
+
+            .content__latest-list-item-title:hover{
+              color: rgb(228, 118, 0);
+            }
+
+            .content__latest-list-item-text{
+              display:block;
+              font-size: 12px;
+              color: rgb(85, 85, 85);
+              line-height: 15px;
+              text-align: left;
+              padding-right:20px;
+            }
+
+

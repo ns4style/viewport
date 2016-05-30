@@ -1,0 +1,137 @@
+.sidebar{
+  width:300px;
+  height:auto;
+  display:inline-block;
+  position:relative;
+}
+
+.sidebar:after{
+  content:"";
+  height:100%;
+  width:1px;
+  position:absolute;
+  background-image: url("/assets/images/sidebar-sep.png");
+  left:-25px;
+  top:0;
+}
+
+  .sidebar__search{
+    width:100%;
+    box-sizing: border-box;
+    height:35px;
+    padding-left:10px;
+    border-radius: 2px;
+    border: solid darkgray 1px;
+    margin-bottom:30px;
+  }
+
+._block{
+  width:100%;
+  height:auto;
+  position:relative;
+  padding-bottom:30px;
+}
+
+._block:after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:10px;
+  top:0;
+  left:0;
+  z-index:-1;
+  background-image: url("/assets/images/stripe.png");
+}
+
+._block-title{
+  font-size: 12px;
+  color: rgb(68, 68, 68);
+  font-style: italic;
+  line-height: 9px;
+  text-align: left;
+  z-index:5;
+  display:inline-block;
+  padding-right:15px;
+  background-color: #ffffff;
+  margin-bottom:20px;
+}
+
+    .sidebar__adv-banner{
+      width:100%;
+      height:250px;
+      box-sizing: border-box;
+      border: solid darkgrey 1px;
+      background-image: url("http://placehold.it/300x250");
+    }
+
+    .sidebar__sponsors-item-wrapper{
+      width:145px;
+      height:145px;
+      background-color: #FFFFFF;
+      padding:10px;
+      display:inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+
+    .sidebar__sponsors-item{
+      width:125px;
+      height:125px;
+      background-image: url("http://placehold.it/125x125");
+    }
+
+    .sidebar__sponsors-item-wrapper:hover{
+      background-color: #f8f8f8;
+    }
+
+    .sidebar__sponsors-item-wrapper:nth-child(odd){
+      margin-right:9px;
+    }
+
+    .sidebar__twitter-title{
+      margin-bottom:10px;
+    }
+
+    .sidebar__twitter-item{
+      padding-bottom:20px;
+      position: relative;
+    }
+
+    .sidebar__twitter-item-text{
+      display:block;
+      font-size: 13px;
+      color: rgb(85, 85, 85);
+      line-height: 15px;
+      text-align: left;
+      padding-right:20px;
+      margin:15px 0 5px;
+
+      a{
+        color: rgb(228, 118, 0);
+        text-decoration: none;
+      }
+    }
+
+    .sidebar__twitter-item-time{
+      display:block;
+      font-size: 10px;
+      color: lightgrey;
+      line-height: 11px;
+      text-align: left;
+      padding-right:20px;
+    }
+
+    .sidebar__posts-title{
+      margin-bottom: 10px;
+    }
+
+    .sidebar__posts-item{
+      font-size: 13px;
+      color: rgb(85, 85, 85);
+      line-height: 15px;
+      text-align: left;
+      padding-right:20px;
+      padding-bottom: 15px;
+      position:relative;
+      margin-top:15px;
+    }

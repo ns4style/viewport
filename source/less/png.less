@@ -1,0 +1,9 @@
+.bgi(@file) {
+    background-image: data-uri('../build/assets/png/@{file}.png');
+    }
+
+.bg(@file) {
+    @sprite: 'sprite-@{file}';
+
+    .sprite(@@sprite);
+    }

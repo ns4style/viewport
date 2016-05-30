@@ -1,0 +1,5 @@
+blocks.carousel = {
+    init: function(){
+        
+    }
+};
